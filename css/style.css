@@ -1,0 +1,695 @@
+/*---HEADER--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: black;
+}
+
+h1{
+    color: blue;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: initial;
+    text-align: center;
+}
+
+
+
+header nav ul li{
+    margin: 10px 15px 15px 10px; 
+}
+
+header nav ul{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: initial;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: initial;
+    color: blue;
+    transition: 1s;
+}
+
+header nav ul li a:hover{
+    color: solid rgb(208, 255, 0);
+}
+
+.conocenos{
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.027), rgba(118, 3, 250, 0.274) ), url(../img/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conocenos h2{
+    font-size: 35px;
+    color: blue;
+    border: 2px solid white;
+    padding: 20px;
+}
+.conocenos p{
+    margin-bottom: 20px;
+    color: rgb(0, 255, 200);
+    font-size: 28px;
+}
+
+
+
+/*---MAIN---*/
+
+.clientes h2{
+    font-size: 35px;
+    color: blue;
+    background-color: black;
+    animation-name: clientes;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 3s;
+}
+
+@keyframes clientes{
+    from{
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+.galeria{
+    display: flex;
+    object-fit: cover;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.galeria :hover{
+    transform: scale(1.1);
+    box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    -webkit-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    -moz-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+}
+
+
+.galeria a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+    border: 1px solid red;
+}
+
+.galeria__azul{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+.galeria__azul__boton{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+}
+
+.galeria__azul__img{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+.galeria__morada{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+.galeria__morada__boton{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+}
+
+.galeria__morada__img{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+.galeria__negra{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+.galeria__negra__boton{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+}
+
+
+.galeria__negra__img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.galeria__verde{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+
+.galeria__verde__boton{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;
+}
+
+
+.galeria__verde__img{
+    width: 250px;
+    height: 250px;
+}
+
+/*mecanicos*/
+
+.mecanicos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 2s;
+}
+
+.mecanicos :hover{
+    transform: scale(1.1);
+    box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    -webkit-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    -moz-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+}
+
+.mecanicos__hernan{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+
+.mecanicos__hernan__img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.mecanicos__luis{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+.mecanicos__luis__img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.mecanicos__patricia{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+
+.mecanicos__patricia__img{
+    width: 250px;
+    height: 300px;
+}
+
+
+/*repuestos*/ 
+
+.repuestos{
+    display: flex;
+    object-fit: cover;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.repuestos :hover{
+    transform: scale(1.1);
+    box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    -webkit-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    -moz-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+}
+
+.repuestos__aceites{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.repuestos__aceites__img{
+    width: 250px;
+    height: 300px;
+}
+
+.repuestos__refrigerantes{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+}
+.repuestos__refrigerantes__img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.repuestos__pastillas{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+}
+
+.repuestos__pastillas__img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.repuestos__cadena{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.repuestos__cadena__img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.repuestos__empaques{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+}
+
+.repuestos__empaques__img{
+    width: 250px;
+    height: 300px;
+}
+
+
+.repuestos__bombillos{
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.repuestos__bombillos__img{
+    width: 250px;
+    height: 300px;
+}
+
+/*servicios*/
+
+.servicios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.servicios__pastillas{
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.servicios__pastillas__img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.servicios__cambio{
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.servicios__cambio__img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.servicios__predictivo{
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.servicios__predictivo__img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.servicios__kit{
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+}
+.servicios__kit__img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.servicios__reparacion{
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.servicios__reparacion__img{
+    width: 100px;
+    height: 100px;
+}
+
+/*clientes*/ 
+
+.clientes h2{
+    color: blue
+}
+.clientes h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: initial;
+}
+
+.logros{
+    font-size: 25px;
+    color: blue;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation-name: logros;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 3s;
+}
+
+@keyframes logros{
+    from{
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+.nosotros{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calidad__titulo{
+    color: blue;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: initial;
+}
+
+.calidad__titulo__parrafo{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: initial;
+}
+.calidad{
+    border: 1px solid white;
+    width: 250px;
+    height: 500px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.experiencia__titulo{
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: initial;
+
+}
+
+.experiencia__titulo__parrafo{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: initial;
+}
+
+.experiencia{
+    border: 1px solid white;
+    width: 250px;
+    height: 500px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+.eficacia__titulo{
+    color: blue;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: initial;
+}
+
+
+.eficacia__titulo__parrafo{
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: initial;
+}
+
+.eficacia{
+    border: 1px solid white;
+    width: 250px;
+    height: 500px;
+    margin: 30px;
+    text-align: center;
+}
+
+
+/*---FOOTER---*/
+.informacion {
+    color: blue;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: initial;
+    animation-name: informacion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 3s;
+}
+
+@keyframes informacion{
+    from{
+        margin-left: 100%;
+        width: 200%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+footer div h3{
+    color: blueviolet;
+}
+
+footer div h3 { 
+    font-size: 25px;
+    font-weight: 400;
+    font-style: initial;
+    text-align: left;
+}
+footer div p{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: initial;
+    text-align: left;
+}
+
+
+/*!------MEDIA QUERY-----*/
+
+@media screen and (max-width:760px) {
+    main{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .nosotros{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .servicios{
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 40px;
+        grid-column: span 1;
+        grid-row: span 1;
+        text-align: center;
+        margin: 10px;
+    }
+    
+}
+
+@media screen and (max-width:460px)  {
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul li{
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    footer{
+        flex-direction: column;
+        text-align: center;
+        margin: 6px;
+    }
+}
+
