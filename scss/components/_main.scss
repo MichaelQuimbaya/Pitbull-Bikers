@@ -1,0 +1,377 @@
+/*----MAIN----*/
+
+.clientes{
+    h2{
+        font-size: 35px;
+        color: $color-principal;
+        background-color: $color-terciario;
+        animation-name: clientes;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-direction: initial;
+        animation-delay: 3s;
+    }
+    .galeria{
+        @include flex ( flex, space-evenly, center );
+        object-fit: cover;
+        flex-wrap: wrap;
+        align-items: center;
+        transition: 2s;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 9px 13px 28px -5px $color-quinto;
+            -webkit-box-shadow: 9px 13px 28px -5px $color-quinto;
+            -moz-box-shadow: 9px 13px 28px -5px $color-quinto;
+        }
+
+        .galeria__azul{
+            border: 1px solid $color-secundario;
+            width: 250px;
+            height: 350px;
+            margin: 30px;
+            text-align: center;
+            .galeria__azul__img{
+                width: 30px;
+                height: 30px;
+            }
+            a .galeria__azul__boton{
+                background-color: map-get($boton , bg-boton );
+                border: map-get($boton , border-boton );
+                width: map-get($boton, ancho );
+            }
+        }
+        .galeria__morada{
+            border: 1px solid $color-secundario;
+            width: 250px;
+            height: 350px;
+            margin: 30px;
+            text-align: center;
+            .galeria__morada__img{
+                width: 250px;
+                height: 250px;
+            }
+            a .galeria__morada__boton{
+                background-color: map-get($boton , bg-boton );
+                border: map-get($boton , border-boton );
+                width: map-get($boton, ancho );
+            }
+        }
+        .galeria__negra{
+            border: 1px solid $color-secundario;
+            width: 250px;
+            height: 350px;
+            margin: 30px;
+            text-align: center;
+            .galeria__negra__img{
+                width: 250px;
+                height: 250px;
+            }
+            a .galeria__negra__boton{
+                background-color: map-get($boton , bg-boton );
+                border: map-get($boton , border-boton );
+                width: map-get($boton, ancho );
+            }
+        }
+        .galeria__verde{
+            border: 1px solid $color-secundario;
+            width: 250px;
+            height: 350px;
+            margin: 30px;
+            text-align: center;
+            .galeria__verde__img{
+                width: 250px;
+                height: 250px;
+            }
+            a .galeria__verde__boton{
+                background-color: map-get($boton , bg-boton );
+                border: map-get($boton , border-boton );
+                width: map-get($boton, ancho );
+            }
+        }
+    }
+}
+
+.logros{
+    font-size: 25px;
+    color: $color-principal;
+    background-color: $color-terciario;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation-name: logros;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 3s;
+    }
+
+.nosotros{
+
+    div .calidad{
+        border: 1px solid $color-secundario;
+        width: 250px;
+        height: 500px;
+        margin: 30px;
+        text-align: center;
+        h2 .calidad__titulo{
+            color: $color-principal;
+            text-align: left;
+            font-size: 30px;
+            font-weight: 600;
+            font-style: initial;
+        }
+        p .calidad__titulo__parrafo{
+            text-align: left;
+            font-size: 25px;
+            font-weight: 500;
+            font-style: initial;
+        }
+    }
+    div .experiencia{
+        border: 1px solid $color-secundario;
+        width: 250px;
+        height: 500px;
+        margin: 30px;
+        text-align: center;
+        h2 .experiencia__titulo{
+            color: $color-principal;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            font-style: initial;
+        }
+        p .experiencia__titulo__parrafo{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            font-style: initial;
+        }
+    }
+    div .eficacia{
+        border: 1px solid $color-secundario;
+        width: 250px;
+        height: 500px;
+        margin: 30px;
+        text-align: center;
+        h2 .eficacia__titulo{
+            color: $color-principal;
+            text-align: right;
+            font-size: 30px;
+            font-weight: 600;
+            font-style: initial;
+        }
+        p .eficacia__titulo__parrafo{
+            text-align: right;
+            font-size: 25px;
+            font-weight: 500;
+            font-style: initial;
+        }
+    }
+}
+
+/*MECANICOS*/
+
+.mecanicos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 2s;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+        -webkit-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+        -moz-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    }
+    .mecanicos__hernan{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .mecanicos__hernan__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+    .mecanicos__luis{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .mecanicos__luis__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+    .mecanicos__patricia{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .mecanicos__patricia__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+}
+
+/*REPUESTOS*/
+
+.repuestos{
+    @extend %flex;
+    object-fit: cover;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    transition: 2s;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+        -webkit-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+        -moz-box-shadow: 9px 13px 28px -5px rgba(31,28,28,0.79);
+    }
+    .repuestos__aceites{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .repuestos__aceites__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+    .repuestos__refrigerantes{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .repuestos__refrigerantes__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+    .repuestos__pastillas{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .repuestos__pastillas__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+    .repuestos__cadena{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .repuestos__cadena__img{
+            width: 250px;
+            height: 300px;
+        }        
+    }
+    .repuestos__empaques{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .repuestos__empaques__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+    .repuestos__bombillos{
+        border: 1px solid white;
+        width: 250px;
+        height: 350px;
+        margin: 30px;
+        text-align: center;
+        .repuestos__bombillos__img{
+            width: 250px;
+            height: 300px;
+        }
+    }
+}
+/*SERVICIOS*/
+
+.servicios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .servicios__pastillas{
+        border: 1px solid white;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        text-align: center;
+        .servicios__pastillas__img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .servicios__cambio{
+        border: 1px solid white;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        text-align: center;
+        .servicios__cambio__img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .servicios__predictivo{
+        border: 1px solid white;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        text-align: center;
+        .servicios__predictivo__img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .servicios__kit{
+        border: 1px solid white;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        text-align: center;
+        .servicios__kit__img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .servicios__reparacion{
+        border: 1px solid white;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        text-align: center;
+        .servicios__reparacion__img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

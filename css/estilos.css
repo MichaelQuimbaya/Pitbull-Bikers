@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header .conocenos, .repuestos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*----HEADER----*/
+header {
+  background-color: black; }
+  header h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: initial;
+    text-align: center;
+    color: blue; }
+  header nav ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: initial;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    header nav ul li {
+      margin: 10px 15px 15px 10px; }
+      header nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: initial;
+        color: blue;
+        transition: 1s; }
+        header nav ul li a:hover {
+          color: yellow; }
+  header .conocenos {
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.027), rgba(118, 3, 250, 0.274)), url(../img/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    header .conocenos h2 {
+      font-size: 35px;
+      color: blue;
+      border: 2px solid white;
+      padding: 20px; }
+    header .conocenos p {
+      margin-bottom: 20px;
+      color: red;
+      font-size: 28px; }
+
+/*----MAIN----*/
+.clientes h2 {
+  font-size: 35px;
+  color: blue;
+  background-color: black;
+  animation-name: clientes;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 3s; }
+
+.clientes .galeria {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  object-fit: cover;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 2s; }
+  .clientes .galeria:hover {
+    transform: scale(1.1);
+    box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79);
+    -webkit-box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79);
+    -moz-box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79); }
+  .clientes .galeria .galeria__azul {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .clientes .galeria .galeria__azul .galeria__azul__img {
+      width: 30px;
+      height: 30px; }
+    .clientes .galeria .galeria__azul a .galeria__azul__boton {
+      background-color: white;
+      border: 1px solid red;
+      width: 15px; }
+  .clientes .galeria .galeria__morada {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .clientes .galeria .galeria__morada .galeria__morada__img {
+      width: 250px;
+      height: 250px; }
+    .clientes .galeria .galeria__morada a .galeria__morada__boton {
+      background-color: white;
+      border: 1px solid red;
+      width: 15px; }
+  .clientes .galeria .galeria__negra {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .clientes .galeria .galeria__negra .galeria__negra__img {
+      width: 250px;
+      height: 250px; }
+    .clientes .galeria .galeria__negra a .galeria__negra__boton {
+      background-color: white;
+      border: 1px solid red;
+      width: 15px; }
+  .clientes .galeria .galeria__verde {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .clientes .galeria .galeria__verde .galeria__verde__img {
+      width: 250px;
+      height: 250px; }
+    .clientes .galeria .galeria__verde a .galeria__verde__boton {
+      background-color: white;
+      border: 1px solid red;
+      width: 15px; }
+
+.logros {
+  font-size: 25px;
+  color: blue;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation-name: logros;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 3s; }
+
+.nosotros div .calidad {
+  border: 1px solid white;
+  width: 250px;
+  height: 500px;
+  margin: 30px;
+  text-align: center; }
+  .nosotros div .calidad h2 .calidad__titulo {
+    color: blue;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: initial; }
+  .nosotros div .calidad p .calidad__titulo__parrafo {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: initial; }
+
+.nosotros div .experiencia {
+  border: 1px solid white;
+  width: 250px;
+  height: 500px;
+  margin: 30px;
+  text-align: center; }
+  .nosotros div .experiencia h2 .experiencia__titulo {
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: initial; }
+  .nosotros div .experiencia p .experiencia__titulo__parrafo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: initial; }
+
+.nosotros div .eficacia {
+  border: 1px solid white;
+  width: 250px;
+  height: 500px;
+  margin: 30px;
+  text-align: center; }
+  .nosotros div .eficacia h2 .eficacia__titulo {
+    color: blue;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: initial; }
+  .nosotros div .eficacia p .eficacia__titulo__parrafo {
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: initial; }
+
+/*MECANICOS*/
+.mecanicos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  transition: 2s; }
+  .mecanicos:hover {
+    transform: scale(1.1);
+    box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79);
+    -webkit-box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79);
+    -moz-box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79); }
+  .mecanicos .mecanicos__hernan {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .mecanicos .mecanicos__hernan .mecanicos__hernan__img {
+      width: 250px;
+      height: 300px; }
+  .mecanicos .mecanicos__luis {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .mecanicos .mecanicos__luis .mecanicos__luis__img {
+      width: 250px;
+      height: 300px; }
+  .mecanicos .mecanicos__patricia {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .mecanicos .mecanicos__patricia .mecanicos__patricia__img {
+      width: 250px;
+      height: 300px; }
+
+/*REPUESTOS*/
+.repuestos {
+  object-fit: cover;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: 2s; }
+  .repuestos:hover {
+    transform: scale(1.1);
+    box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79);
+    -webkit-box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79);
+    -moz-box-shadow: 9px 13px 28px -5px rgba(31, 28, 28, 0.79); }
+  .repuestos .repuestos__aceites {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .repuestos .repuestos__aceites .repuestos__aceites__img {
+      width: 250px;
+      height: 300px; }
+  .repuestos .repuestos__refrigerantes {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .repuestos .repuestos__refrigerantes .repuestos__refrigerantes__img {
+      width: 250px;
+      height: 300px; }
+  .repuestos .repuestos__pastillas {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .repuestos .repuestos__pastillas .repuestos__pastillas__img {
+      width: 250px;
+      height: 300px; }
+  .repuestos .repuestos__cadena {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .repuestos .repuestos__cadena .repuestos__cadena__img {
+      width: 250px;
+      height: 300px; }
+  .repuestos .repuestos__empaques {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .repuestos .repuestos__empaques .repuestos__empaques__img {
+      width: 250px;
+      height: 300px; }
+  .repuestos .repuestos__bombillos {
+    border: 1px solid white;
+    width: 250px;
+    height: 350px;
+    margin: 30px;
+    text-align: center; }
+    .repuestos .repuestos__bombillos .repuestos__bombillos__img {
+      width: 250px;
+      height: 300px; }
+
+/*SERVICIOS*/
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .servicios .servicios__pastillas {
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center; }
+    .servicios .servicios__pastillas .servicios__pastillas__img {
+      width: 100px;
+      height: 100px; }
+  .servicios .servicios__cambio {
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center; }
+    .servicios .servicios__cambio .servicios__cambio__img {
+      width: 100px;
+      height: 100px; }
+  .servicios .servicios__predictivo {
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center; }
+    .servicios .servicios__predictivo .servicios__predictivo__img {
+      width: 100px;
+      height: 100px; }
+  .servicios .servicios__kit {
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center; }
+    .servicios .servicios__kit .servicios__kit__img {
+      width: 100px;
+      height: 100px; }
+  .servicios .servicios__reparacion {
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center; }
+    .servicios .servicios__reparacion .servicios__reparacion__img {
+      width: 100px;
+      height: 100px; }
+
+/*---FOOTER---*/
+footer div .informacion {
+  color: blue;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: initial;
+  animation-name: informacion;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 3s; }
+  footer div .informacion h3 {
+    color: blueviolet;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: initial;
+    text-align: left; }
+  footer div .informacion p {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: initial;
+    text-align: left; }
+
+/*---MEDIAQUERY---*/
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 460px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center; }
+  header nav ul li {
+    margin: 6px; } }
+
+@media screen and (max-width: 760px) {
+  main {
+    flex-direction: column; } }
+
+@media screen and (max-width: 350px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    margin: 6px; } }
+
+@media screen and (max-width: 660px) {
+  main .nosotros {
+    flex-direction: column;
+    text-align: center; } }
+
+@media screen and (max-width: 590px) {
+  .servicios {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 40px;
+    grid-column: span 1;
+    grid-row: span 1;
+    text-align: center;
+    margin: 10px; } }
+
+@media screen and (max-width: 590px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 40px;
+    grid-column: span 1;
+    grid-row: span 1;
+    text-align: center;
+    margin: 10px;
+    flex-direction: column; } }

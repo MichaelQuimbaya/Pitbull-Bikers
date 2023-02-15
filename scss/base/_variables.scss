@@ -1,0 +1,48 @@
+$color-principal: blue;
+$color-secundario: white;
+$color-terciario: black;
+$color-cuarto: red;
+$color-quinto: rgba(31,28,28,0.79);
+$color-sexto: yellow;
+
+//* LISTAS
+
+$colores:
+blue,
+white,
+black,
+red,
+rgba(31,28,28,0.79),
+yellow;
+
+$font-size:
+1px,
+10px,
+25px,
+50px,
+80px,
+100px,
+150px;
+
+//* MAPAS
+
+$boton:(
+bg-boton: white,
+border-boton: 1px solid red,
+color-texto: black,
+ancho: 15px,
+);
+
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
